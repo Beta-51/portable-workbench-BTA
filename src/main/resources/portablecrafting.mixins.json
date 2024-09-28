@@ -1,9 +1,13 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "turniplabs.examplemod.mixin",
+    "package": "nourmodz.portablecrafting.mixinz",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
+      "CommandsMixin",
+      "ContainerWorkbenchMixin",
+      "GuiChatMixin",
+      "ContainerMixin"
     ],
     "client": [
     ],

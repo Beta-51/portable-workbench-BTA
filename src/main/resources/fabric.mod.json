@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "portablecrafting",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Portable Crafting Tables",
+  "description": "Allows you to use crafting tables without placing them",
   "authors": [
-    "Turnip Labs"
+    "Nour (Lusii)"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"nourmodz.portablecrafting.PortableCrafting"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"nourmodz.portablecrafting.PortableCrafting"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"nourmodz.portablecrafting.PortableCrafting"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"nourmodz.portablecrafting.PortableCrafting"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "portablecrafting.mixins.json"
   ],
 
   "depends": {
