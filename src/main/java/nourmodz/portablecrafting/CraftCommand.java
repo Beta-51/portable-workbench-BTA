@@ -17,7 +17,6 @@ public class CraftCommand extends Command {
 		super("craft");
 	}
 
-
 	@Override
 	public boolean execute(CommandHandler commandHandler, CommandSender commandSender, String[] strings) {
 		if (commandSender.isConsole()) {
@@ -28,16 +27,7 @@ public class CraftCommand extends Command {
 		boolean workbenchFound = PortableCrafting.findWorkbench(player);
 		if (workbenchFound) {
 			if (!commandHandler.isServer()) {
-				//mc.displayGuiScreen(null);
-				//mc.thePlayer.closeScreen();
-				//mc.isGamePaused = false;
 				mc.thePlayer.displayGUIWorkbench((int) player.x,(int) player.y, (int) player.z);
-				//mc.displayGuiScreen(new GuiCrafting(mc.thePlayer.inventory, mc.theWorld, (int) player.x,(int) player.y, (int) player.z));
-				//mc.thePlayer.displayGUIWorkbench((int) player.x,(int) player.y, (int) player.z);
-				//mc.displayGuiScreen(new GuiCrafting(player.inventory, mc.theWorld, (int) player.x,(int) player.y, (int) player.z));
-				//player.displayGUIWorkbench((int) player.x, (int) player.y, (int) player.z);
-				//player.displayGUIWorkbench((int) player.x, (int) player.y, (int) player.z);
-				//player.sendMessage("wb found");
 				return true;
 			} else {
 				player.displayGUIWorkbench((int) player.x, (int) player.y, (int) player.z);
